@@ -1,0 +1,263 @@
+/* ---------- BASE ---------- */
+
+body {
+  background: #f3f5ff;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Container responsive */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---------- TYPO ---------- */
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 700;
+  color: #1f174d;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 26px;
+  margin-bottom: 24px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+}
+
+/* Id spécifique pour la carte d’intro */
+#introduction {
+  text-align: center;
+}
+
+/* Descendant selector : seulement le texte de l’intro */
+#introduction .intro-text {
+  margin: 18px auto 22px;
+  max-width: 560px;
+  color: #4b4b63;
+}
+
+/* Carte hero légèrement différente */
+.card-hero {
+  padding-top: 40px;
+}
+
+/* Footer card */
+.card-footer {
+  text-align: center;
+}
+
+/* ---------- AVATAR ---------- */
+
+.avatar {
+  display: block;
+  margin: 18px auto 10px;
+}
+
+/* Classes combinées : cercle + bord */
+.img-circle {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.img-bordered {
+  border: 4px solid #ffffff;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.25);
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+/* Pseudo-class : hover */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.4);
+}
+
+/* ---------- TAGS ---------- */
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-pill {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-weight: 500;
+}
+
+/* ---------- TIMELINE ---------- */
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.timeline li + li {
+  margin-top: 18px;
+}
+
+.timeline h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.timeline p {
+  margin: 0;
+  color: #4b4b63;
+}
+
+/* ---------- BULLET LIST ---------- */
+
+.bullet-list {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: #4b4b63;
+}
+
+/* ---------- LINKEDIN BADGE ---------- */
+
+.linkedin-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #0a66c2;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 25px rgba(10, 102, 194, 0.4);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.linkedin-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(10, 102, 194, 0.55);
+}
+
+/* ---------- SOCIAL LINKS ---------- */
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #4b4b63;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Pseudo-class sur les liens */
+.social-links a:hover {
+  color: #7c3aed;
+}
+
+.footer-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+/* ---------- FUN FACTS ---------- */
+
+#fun-facts p {
+  color: #4b4b63;
+  margin-bottom: 14px;
+}
+
+.fun-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.fun-list li {
+  background: #f7f5ff;
+  border-left: 4px solid #7c3aed;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #3d3b5c;
+  font-weight: 500;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 720px) {
+  .container {
+    max-width: 100%;
+    margin: 24px auto;
+  }
+
+  .card {
+    padding: 22px 18px;
+  }
+
+  #introduction .intro-text {
+    padding: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
